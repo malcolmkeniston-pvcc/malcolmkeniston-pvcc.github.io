@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5 Terminology Table</title>
+  </head>
+  <style>
+    body {
+      background-color: #c92020;
+      background-size: 20%;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 0px;
+    }
+    table {
+      width: 90%;
+      background-color: rgb(115, 189, 189);
+      font-weight: bold;
+      margin: 4em;
+      position: relative;
+    }
+    tr {
+      background-color: #cfb43c;
+    }
+    h1 {
+      color: black;
+      font-size: 3em;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-align: center;
+    }
+    h2 {
+      color: #000f99;
+      font-size: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: #0c00b3;
+    }
+    a:visited {
+      color: #006666;
+    }
+    a:hover {
+      color: #2862b9;
+    }
+    a:active {
+      color: #6260f0;
+    }
+    h1 {
+      background-color: rgb(190, 190, 190)
+      color: white;
+    }
+    .container {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <td><a href="index.html">Home</a></td>
+        <td><a href="https://www.pvcc.edu">PVCC</a></td>
+        <td><a href="https://www.w3schools.com/html">W3 Schools</a></td>
+        <td style="width: 300px"><a href="contactus.html">Contact us</a></td>
+      </tr>
+    </table>
+    <div class="container">
+    <table>
+      <tbody>
+        <tr>
+          <th colspan="5">
+            Chapter 5: Programming Algorithms and Software Testing
+          </th>
+        </tr>
+      </tbody>
+    </table>
+
+    <table style="width: 90%">
+      <tbody>
+        <tr>
+          <th colspan="2">Phases of computer development</th>
+        </tr>
+        <tr>
+          <td>Phase 1:</td>
+          <td>Understand the problem</td>
+        </tr>
+        <tr>
+          <td>Phase 2:</td>
+          <td>Design an algorithm to solve the problem</td>
+        </tr>
+        <tr>
+          <td>Phase 3:</td>
+          <td>
+            Write the program code in the appropriate language based on the
+            algorithm
+          </td>
+        </tr>
+        <tr>
+          <td>Phase 4:</td>
+          <td>Enter the program and save</td>
+        </tr>
+        <tr>
+          <td>Phase 5:</td>
+          <td>Execute the program</td>
+        </tr>
+        <tr>
+          <td>Phase 6:</td>
+          <td>Test the program, find errors and debug, then retest</td>
+        </tr>
+        <tr>
+          <td>Phase 7:</td>
+          <td>Document and evaluate the program</td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <h2>Programming structures:</h2>
+            <ul>
+              <li>Sequential structure: Top-down execution</li>
+              <li>Decision structure: if/then/else</li>
+              <li>Iterative (Looping)</li>
+              while loop: continue looping as long something is true
+              repeat/until loop: continue looping until something is true for
+              loop: loop a given number of times
+              <li>Recursive structures:</li>
+              Repeat a set of instructions as a subtask of itself Repetition
+              continues until: degenerative case, which is a termination
+              condition, is met (degenerative case is also called a "base case")
+            </ul>
+            <h2>Two classic programming/database problems</h2>
+            <ul>
+              <li>Sorting: Descending order/Ascending order</li>
+              <li>Sorting numbers</li>
+              <li>Sorting strings:(in accordance with ASCII values)</li>
+              <li>Searching:find specific data that meet a certain criteria</li>
+              <li>In database:</li>
+              <li>Filters:temporary search</li>
+              <li>
+                Queries:search criteria are saved so they don't have to be
+                recreated
+              </li>
+              <li>Two popular search techniques</li>
+              <ul>
+                <li>
+                  Squential search: search from top to bottom or bottom to top,
+                  one item at a time
+                </li>
+                <li>Binary search</li>
+              </ul>
+              <ul>
+                <li>only works if data is SORTED first</li>
+                <li>start in the middle, then go to half of that, etc.</li>
+              </ul>
+              <li>
+                Two classic program goals:
+                <ul>
+                  <li>
+                    Efficiency: Program takes minimal time and/or resources
+                  </li>
+                  <li>
+                    Correctness:Program runs in expected ways and works for all
+                    expected conditions
+                  </li>
+                </ul>
+                <h2>Software testing and verification</h2>
+
+                <h3>Kinds of test:</h3>
+
+                <ul>
+                  <li>
+                    Acceptance testing: Testing to see if the software meets Guidelines
+                  </li>
+                  <li>
+                    Intergation testing: Testing to see if the software works
+                  </li>
+                  <li>
+                    Unit testing: Testing to see if the software works on a unit
+                  </li>
+                  <li>
+                    Functional testing: Testing to see if the software works on a function level 
+                  </li>
+                  <li>
+                    Performance testing: Testing to see if the software works on a performance level
+                  </li>
+                  <li>
+                    Regression testing: Testing to see if the software works on a regression level
+                  </li>
+                  <li>
+                    Stress testing: Testing to see if the software works on a stress level
+                  </li>
+                  <li>
+                    Usability testing: Testing to see if the software works on a usability level
+                  </li>
+                </ul>
+
+                <h3>Software testing is done to detect:</h3>
+
+                <ul>
+                  <li>Architectural flaws</li>
+                  <li>Poor design decisions</li>
+                  <li>Invalid or incorrect funtionality</li>
+                  <li>Security vulnerabilities</li>
+                  <li>Scalability issues</li>
+                </ul>
+
+                <h3>Testing best practices</h3>
+
+                <ul>
+                  <li>
+                    Continous testing: Team tests out each build until it is available 
+                  </li>
+                  <li>
+                    Configuration management: Maintain test assets and track software build 
+                  </li>
+                  <li>
+                    Service virtualization: Simulates the service and system that are missing or not completed
+                  </li>
+                  <li>
+                    Defect or "bug tracking": Monitoring defects to improve qaulity 
+                  </li>
+                  <li>
+                    Metrics and reporting: Report status, goals, and results by team
+                  </li>
+                </ul>
+
+                <p>
+                  <a href="https://www.ibm.com/topics/software-testing"
+                    >What is software testing?</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
